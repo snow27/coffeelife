@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/homeStyle.css' %}">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Coffee for life!</h1>
+        <p></p>
+        <h2>Why to drink coffee?</h2>
+        <ol>
+          <li>Coffee is a potent source of healthful antioxidants.</li>
+          <li>Caffeine provides a short-term memory boost.</li>
+          <li>Coffee may help protect against cognitive decline.</li>
+          <li>Coffee is healthy for your heart.</li>
+          <li>There is coffee production:</li>
+          <ul>
+            <li><a href="{% url 'columbia'%}">Columbia</a></li>
+          </ul>
+          <li>Coffee may help curb certain cancers.</li>
+          <li>Coffee may lessen your risk of developing type 2 diabetes.</li>
+        </ol>
+        <h2>No one knows exactly how or when coffee was discovered, though there are many legends about its origin.</h2>
+
+      </div>
+      <div class="jumbotron">
+        <h2 id="picOfCoffee">Pictures of coffee:</h2>
+        <div class="row">
+          <div class="col-lg-4 col-xs-6 thumbnail">
+            <img id="sixpics" src="{% static 'images/coffee1.jpg'%}" alt="">
+          </div>
+          <div class="col-lg-4 col-xs-6 thumbnail">
+            <img id="sixpics" src="{% static 'images/coffee2.jpg'%}" alt="">
+          </div>
+          <div class="col-lg-4 col-xs-6 thumbnail">
+            <img id="sixpics" src="{% static 'images/coffee3.jpg'%}" alt="">
+          </div>
+          <div class="col-lg-4 col-xs-6 thumbnail">
+            <img id="sixpics" src="{% static 'images/coffee4.jpg'%}" alt="">
+          </div>
+          <div class="col-lg-4 col-xs-6 thumbnail">
+            <img id="sixpics" src="{% static 'images/coffee5.jpg'%}" alt="">
+          </div>
+          <div class="col-lg-4 col-xs-6 thumbnail">
+            <img id="sixpics" src="{% static 'images/coffee6.jpg'%}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
